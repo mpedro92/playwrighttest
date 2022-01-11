@@ -9,10 +9,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh '''
-                    npm install
-                    npm run test
-                '''
+                nodejs(nodeJSInstallationName: 'node16', configId: '<config-file-provider-id>') {
+                    sh '''
+                        npm install
+                        npm run test
+                    '''
+                }
             }
         }
         stage('Deploy') {
