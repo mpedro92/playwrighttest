@@ -1,0 +1,26 @@
+{
+  "name": "repotest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js features/**/*.feature"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpedro92/playwrighttest.git"
+  },
+  "author": "pedromonteiro <pedro.monteiro@mindera.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpedro92/playwrighttest/issues"
+  },
+  "homepage": "https://github.com/mpedro92/playwrighttest#readme",
+  "dependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "playwright": "^1.17.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.17.1"
+  }
+}
