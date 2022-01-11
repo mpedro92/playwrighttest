@@ -1,4 +1,4 @@
-const { HomePage } = require('/Users/pedromonteiro/repotest/models/HomePage.js');
+const  HomePage = require('/Users/pedromonteiro/repotest/models/HomePage.js');
 
 const { test, expect } = require('@playwright/test');
 

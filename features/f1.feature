@@ -1,6 +1,10 @@
-Feature: Feature file;
+Feature: search feature
 
-  Scenario: Test if input equals output
-    Given I enter Dunelm page
-    And I give search input
-    Then Output equals search input
+  Scenario Outline: Test if input equals output
+    Given I enter homepage
+    When I give search input <searchTerm>
+    Then Search output matches <searchTerm>
+    Examples:
+      | searchTerm |  |
+      | chair      |  |
+      | table      |  |

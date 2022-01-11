@@ -5,7 +5,10 @@ class HomePage {
 
     async navigate() {
         await this.page.goto('https://dunelm.com');
-        await this.page.click('text= Allow All');
+        try {
+            await this.page.click('text= Allow All', {timeout: 2000});
+        } catch (e) {
+        }
     }
 
     async searchF(text){
@@ -15,4 +18,4 @@ class HomePage {
 
 }
 
-module.exports = { HomePage };
+module.exports = HomePage;
